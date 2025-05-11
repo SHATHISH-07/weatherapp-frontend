@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../app/store";
 import { GET_CURRENT_WEATHER } from "../graphql/queries/getCurrentWeather";
 import CitySearchBar from "../components/CitySearchBar";
+import currentWeatherPlaceholder from "/weather-placeholder.svg";
 
 const CurrentWeather = () => {
   const user = useSelector((state: RootState) => state.user);
@@ -135,7 +136,7 @@ const CurrentWeather = () => {
         Current Weather
       </h3>
       <img
-        src="/weather-placeholder.svg"
+        src={currentWeatherPlaceholder}
         alt="Weather Illustration"
         className="w-48 h-48 "
       />
