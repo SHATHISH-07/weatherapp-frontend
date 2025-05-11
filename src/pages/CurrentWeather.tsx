@@ -55,7 +55,7 @@ const CurrentWeather = () => {
       <h3 className="text-3xl font-normal text-black dark:text-white my-5">
         Current Weather
       </h3>
-      <div className=" h-auto rounded-xl shadow-lg bg-white dark:bg-[#121212] text-gray-800 dark:text-gray-100 p-6 space-y-4">
+      <div className="w-full h-auto rounded-xl shadow-lg bg-white dark:bg-[#121212] text-gray-800 dark:text-gray-100 p-6 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           {/* Left Side */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">

@@ -73,9 +73,9 @@ const DailyForecast = () => {
   const handleSearch = () => {
     getCoords({
       variables: {
-        city: city,
-        state: state,
-        country: country,
+        city,
+        state,
+        country,
       },
     });
   };
