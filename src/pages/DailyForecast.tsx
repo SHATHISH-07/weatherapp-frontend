@@ -70,7 +70,8 @@ const DailyForecast = () => {
     }
   }, [geoData, getDailyForecast]);
 
-  const handleSearch = () => {
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
     getCoords({
       variables: {
         city,
