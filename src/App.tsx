@@ -48,7 +48,7 @@ const App = () => {
   }, [client, dispatch]);
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className=" mx-auto">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
