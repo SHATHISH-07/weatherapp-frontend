@@ -124,6 +124,22 @@ const MenuBar = ({ isOpen, setIsOpen }: MenuBarProp) => {
                 Login
               </p>
             )}
+            <a
+              href="https://shathish2004.github.io/Shathish-Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-lg md:text-2xl p-7 hover:text-gray-500 cursor-pointer"
+            >
+              About Me
+            </a>
+            <a
+              href="https://shathish2004.github.io/Shathish-Portfolio/#/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-lg md:text-2xl p-7 hover:text-gray-500 cursor-pointer"
+            >
+              FeedBack
+            </a>
           </div>
         </div>
       </div>
