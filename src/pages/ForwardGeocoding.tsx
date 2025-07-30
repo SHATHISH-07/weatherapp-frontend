@@ -81,7 +81,7 @@ const ForwardGeocoding = () => {
           forwardGeoData.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center rounded-xl mb-8 p-6 bg-[#f3f4f6] dark:bg-[#1a1a1a] shadow-md transition-shadow hover:shadow-md"
+              className="flex flex-col items-center justify-center rounded-xl mb-11 mt-[81px] p-6 bg-[#f3f4f6] dark:bg-[#1a1a1a] shadow-md transition-shadow hover:shadow-md "
             >
               <h3 className="text-xl md:text-xl font-medium text-gray-900 dark:text-gray-100 mb-2 flex items-center gap-2">
                 <i className="fas fa-map-marker-alt text-gray-500"></i>

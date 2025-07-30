@@ -63,7 +63,9 @@ const AirQuality = () => {
     }
   }, [geoData, getAirQuality]);
 
-  const handleSearch = () => {
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+
     if (!city || !country) return;
     getCoords({
       variables: {

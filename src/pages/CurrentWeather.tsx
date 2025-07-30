@@ -172,8 +172,9 @@ const CurrentWeather = () => {
       )}
 
       {loading && (
-        <p className="text-center text-sm text-black dark:text-white">
+        <p className="text-center text-sm text-black dark:text-white mt-2">
           Loading weather data...
+          {renderDefaultView()}
         </p>
       )}
 

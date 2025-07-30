@@ -97,13 +97,19 @@ const DailyForecast = () => {
         handleSubmit={handleSearch}
       />
 
-      {loading ? (
+      {!forecastData && renderDefaultView()}
+
+      {loading && (
         <p className="text-center text-2xl mt-4 text-black dark:text-white">
           Loading...
         </p>
-      ) : error ? (
-        <p className="text-center text-red-500">Error: {error.message}</p>
-      ) : forecastData ? (
+      )}
+
+      {error && (
+        <p className="text-center text-red-500 mt-2">Error: {error.message}</p>
+      )}
+
+      {!loading && forecastData && (
         <div>
           <h2 className="text-4xl mt-15 mb-3 font-normal text-center">
             Daily Forecast
@@ -196,27 +202,30 @@ const DailyForecast = () => {
             )}
           </div>
         </div>
-      ) : (
-        <div className="max-w-4xl mx-auto text-center py-16 px-6 ">
-          <h3 className="text-3xl font-normal mb-4 text-black dark:text-white">
-            Daily Forecast
-          </h3>
-          <img
-            className="w-48  h-48 mx-auto opacity-80"
-            src={placeHolder}
-            alt="No Forecast Data Available"
-          />
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-            To get the weather forecast, please enter a valid city, state, and
-            country.
-          </p>
-          <p className="text-md text-gray-600 dark:text-gray-400 mb-4">
-            Ensure that the details you enter are correct. You can use the
-            search bar above to quickly find your city and get the forecast in
-            real-time.
-          </p>
-        </div>
       )}
+    </div>
+  );
+};
+
+const renderDefaultView = () => {
+  return (
+    <div className="max-w-4xl mx-auto text-center py-16 px-6 ">
+      <h3 className="text-3xl font-normal mb-4 text-black dark:text-white">
+        Daily Forecast
+      </h3>
+      <img
+        className="w-48  h-48 mx-auto opacity-80"
+        src={placeHolder}
+        alt="No Forecast Data Available"
+      />
+      <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+        To get the weather forecast, please enter a valid city, state, and
+        country.
+      </p>
+      <p className="text-md text-gray-600 dark:text-gray-400 mb-4">
+        Ensure that the details you enter are correct. You can use the search
+        bar above to quickly find your city and get the forecast in real-time.
+      </p>
     </div>
   );
 };
