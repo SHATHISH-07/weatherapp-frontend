@@ -67,7 +67,7 @@ const ReverseGeocoding = () => {
         {reverseGeoData ? (
           reverseGeoData.map((item, index) => (
             <div className="w-full max-w-2xl flex flex-col items-center">
-              <h3 className="text-2xl font-medium text-black dark:text-white mt-10 mb-[21px]">
+              <h3 className="text-2xl font-medium text-black dark:text-white mt-10 mb-5">
                 Reverse Geocoding
               </h3>
               <div
