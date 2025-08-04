@@ -82,7 +82,7 @@ const DailyForecast = () => {
   };
 
   return (
-    <div className="bg-[#f3f4f6] mt-[65px] dark:bg-[#1c1c1e] text-black dark:text-white sm:min-h-screen p-6">
+    <div className="bg-[#f3f4f6] mt-[50px] md:mt-[65px] dark:bg-[#1c1c1e] text-black dark:text-white sm:min-h-screen p-6">
       <FrdGeoSearchBar
         text="Daily Forecast"
         placeholder="Enter the city"

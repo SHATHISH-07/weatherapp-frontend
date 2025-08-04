@@ -60,7 +60,7 @@ const ForwardGeocoding = () => {
   };
 
   return (
-    <div className="px-4 mt-[65px] bg-white dark:bg-[#121212]">
+    <div className="px-4 mt-[50px] md:mt-[65px] bg-white dark:bg-[#121212]">
       <FrdGeoSearchBar
         text="Get Forward Geocoding"
         placeholder="Enter a city"

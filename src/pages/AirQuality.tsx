@@ -79,7 +79,7 @@ const AirQuality = () => {
   const components = airData?.getAirQuality?.list?.[0]?.components;
 
   return (
-    <div className="mt-[65px] mx-auto px-4 py-6 bg-[#f3f4f6] dark:bg-[#1c1c1e]">
+    <div className="mt-[50px] md:mt-[65px] mx-auto px-4 py-6 bg-[#f3f4f6] dark:bg-[#1c1c1e]">
       <FrdGeoSearchBar
         text="Get Air Quality"
         placeholder="Enter City Name"

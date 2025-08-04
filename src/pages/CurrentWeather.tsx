@@ -151,7 +151,7 @@ const CurrentWeather = () => {
   );
 
   return (
-    <div className="sm:min-h-screen mt-[65px] bg-gray-100 dark:bg-[#1c1c1e] flex flex-col items-center justify-start p-4">
+    <div className="sm:min-h-screen mt-[50px] md:mt-[65px] bg-gray-100 dark:bg-[#1c1c1e] flex flex-col items-center justify-start p-4">
       <CitySearchBar
         text={"Get Weather"}
         placeholder={"Enter city name"}
