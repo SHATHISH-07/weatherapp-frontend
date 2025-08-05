@@ -51,7 +51,7 @@ const CurrentWeather = () => {
   };
 
   const renderWeatherCard = () => (
-    <div className="w-full sm:max-w-4xl flex flex-col justify-center items-center">
+    <div className="w-full sm:max-w-6xl h-[100%] flex flex-col justify-center items-center">
       <h3 className="text-3xl font-normal text-black dark:text-white my-5">
         Current Weather
       </h3>
@@ -151,7 +151,7 @@ const CurrentWeather = () => {
   );
 
   return (
-    <div className="sm:min-h-screen mt-[50px] md:mt-[65px] bg-gray-100 dark:bg-[#1c1c1e] flex flex-col items-center justify-start p-4">
+    <div className="pb-20 sm:pb-30 mt-[50px] md:mt-[65px] bg-gray-100 dark:bg-[#1c1c1e] flex flex-col items-center justify-start p-4">
       <CitySearchBar
         text={"Get Weather"}
         placeholder={"Enter city name"}

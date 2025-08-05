@@ -25,7 +25,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="w-full fixed  px-4 py-3 bg-white dark:bg-[#121212] shadow-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className=" mx-auto flex items-center justify-between">
           {/* Left: Logo */}
           <div
             onClick={() => {
